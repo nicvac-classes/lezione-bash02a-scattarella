@@ -1,0 +1,13 @@
+2024-01-15 08:05:00 mario.rossi login successo 192.168.1.10
+2024-01-15 08:10:30 admin login fallito 192.168.1.100
+2024-01-15 08:10:31 admin login fallito 192.168.1.100
+2024-01-15 08:15:00 admin login successo 192.168.1.100
+2024-01-15 08:20:00 luca.bianchi login successo 192.168.1.20
+2024-01-15 08:25:00 anna.verdi login successo 192.168.1.30
+2024-01-15 08:30:00 mario.rossi logout 192.168.1.10
+2024-01-15 08:35:00 guest login fallito 192.168.1.50
+2024-01-15 08:40:00 luca.bianchi logout 192.168.1.20
+2024-01-15 08:45:00 sara.neri login successo 192.168.1.40
+2024-01-15 09:00:00 admin logout 192.168.1.100
+2024-01-15 09:15:00 anna.verdi logout 192.168.1.30
+2024-01-15 09:30:00 sara.neri logout 192.168.1.40

@@ -1,0 +1,23 @@
+Database Relazionali - Introduzione
+
+Un database relazionale organizza i dati in tabelle (relazioni).
+Ogni tabella è composta da righe (tuple) e colonne (attributi).
+
+Concetti chiave:
+- Chiave primaria (PK): identifica univocamente ogni riga
+- Chiave esterna (FK): collega due tabelle tra loro
+- Normalizzazione: processo per eliminare la ridondanza
+
+Comandi SQL fondamentali:
+- SELECT: interrogare i dati
+- INSERT: inserire nuovi record
+- UPDATE: modificare record esistenti
+- DELETE: eliminare record
+
+Esempio di query:
+SELECT nome, cognome FROM studenti WHERE classe = '4IC';
+
+Le JOIN permettono di combinare dati da più tabelle:
+- INNER JOIN: solo le righe con corrispondenza in entrambe le tabelle
+- LEFT JOIN: tutte le righe della tabella sinistra
+- RIGHT JOIN: tutte le righe della tabella destra

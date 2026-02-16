@@ -1,0 +1,8 @@
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+2024-01-15 08:05:16 [INFO] Richiesta GET /style.css - 200 OK
+2024-01-15 08:10:30 [WARNING] Tentativo di accesso non autorizzato da 192.168.1.100
+2024-01-15 10:00:00 [INFO] Server in fase di arresto
+2024-01-15 10:00:01 [INFO] Connessione al database chiusa
+2024-01-15 10:00:02 [INFO] Server arrestato correttamente

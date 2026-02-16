@@ -1,0 +1,20 @@
+Sicurezza Informatica - Concetti Base
+
+La triade CIA:
+- Confidentiality (Riservatezza): solo chi è autorizzato può accedere ai dati
+- Integrity (Integrità): i dati non vengono modificati in modo non autorizzato
+- Availability (Disponibilità): i dati sono accessibili quando necessario
+
+Tipi di attacco:
+- Phishing: email fraudolente per rubare credenziali
+- Man-in-the-Middle: intercettazione delle comunicazioni
+- DDoS: sovraccarico di un server con richieste
+- SQL Injection: inserimento di codice SQL malevolo
+- Brute Force: tentativi ripetuti di indovinare password
+
+Contromisure:
+- Firewall: filtraggio del traffico di rete
+- Antivirus: rilevamento di malware
+- Crittografia: cifratura dei dati sensibili
+- Autenticazione a due fattori (2FA)
+- Backup regolari dei dati

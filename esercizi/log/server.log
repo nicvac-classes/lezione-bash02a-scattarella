@@ -1,0 +1,22 @@
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+2024-01-15 08:05:16 [INFO] Richiesta GET /style.css - 200 OK
+2024-01-15 08:10:30 [WARNING] Tentativo di accesso non autorizzato da 192.168.1.100
+2024-01-15 08:10:31 [WARNING] Password errata per utente admin
+2024-01-15 08:15:00 [INFO] Richiesta POST /api/login - 200 OK
+2024-01-15 08:20:45 [ERROR] Connessione al database persa
+2024-01-15 08:20:46 [ERROR] Timeout nella riconnessione al database
+2024-01-15 08:20:50 [INFO] Riconnessione al database riuscita
+2024-01-15 08:30:00 [INFO] Richiesta GET /api/studenti - 200 OK
+2024-01-15 08:35:22 [WARNING] Memoria disponibile sotto il 20%
+2024-01-15 08:40:00 [INFO] Richiesta PUT /api/studenti/15 - 200 OK
+2024-01-15 08:45:10 [ERROR] File non trovato: /images/logo.png - 404
+2024-01-15 08:50:00 [INFO] Backup automatico completato
+2024-01-15 09:00:00 [INFO] Richiesta GET /api/classi - 200 OK
+2024-01-15 09:15:33 [WARNING] Certificato SSL in scadenza tra 7 giorni
+2024-01-15 09:30:00 [INFO] Pulizia cache completata
+2024-01-15 09:45:00 [ERROR] Impossibile inviare email di notifica
+2024-01-15 10:00:00 [INFO] Server in fase di arresto
+2024-01-15 10:00:01 [INFO] Connessione al database chiusa
+2024-01-15 10:00:02 [INFO] Server arrestato correttamente

@@ -1,0 +1,402 @@
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ cd documenti
+bash: cd: documenti: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ pwd
+/workspaces/lezione-bash02a-scattarella
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ cd /workspaces/lezione-bash02a-scattarella/esercizi/documenti
+bash: cd: /workspaces/lezione-bash02a-scattarella/esercizi/documenti: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ pwd
+/workspaces/lezione-bash02a-scattarella
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ ls
+README.md  setup.sh
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ ls -a
+.  ..  .git  README.md  setup.sh
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ ./setup.sh
+bash: ./setup.sh: Permission denied
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ chmod +x setup.sh
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ ./setup.sh
+🔧 Creazione ambiente di esercitazione...
+
+✅ Ambiente creato con successo!
+
+📁 Struttura creata in: /workspaces/lezione-bash02a-scattarella/esercizi/
+
+Contenuto:
+/workspaces/lezione-bash02a-scattarella/esercizi/
+├── archivio
+│   ├── budget_2023.xlsx
+│   ├── budget_2024.xlsx
+│   ├── documento_febbraio.pdf
+│   ├── documento_gennaio.pdf
+│   ├── documento_marzo.pdf
+│   ├── foto_milano_2023.jpg
+│   ├── foto_napoli_2024.jpg
+│   ├── foto_roma_2023.jpg
+│   ├── foto_roma_2024.jpg
+│   ├── note.txt
+│   ├── presentazione.pptx
+│   ├── readme.md
+│   ├── relazione_finale.docx
+│   └── relazione_intermedia.docx
+├── backup
+├── documenti
+│   ├── .config_segreto
+│   ├── appunti_database.txt
+│   ├── appunti_reti.txt
+│   ├── appunti_sicurezza.txt
+│   └── todo.txt
+├── log
+│   ├── accessi.log
+│   └── server.log
+├── progetti
+│   ├── mobile
+│   │   ├── MainActivity.java
+│   │   └── config.txt
+│   └── webapp
+│       ├── app.js
+│       ├── index.html
+│       └── style.css
+└── sandbox
+
+9 directories, 26 files
+
+🚀 Sei pronto per iniziare gli esercizi! Apri il README.md
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ pwd
+/workspaces/lezione-bash02a-scattarella
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella (main) $ cd /workspaces/lezione-bash02a-scattarella/esercizi/documenti
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cat appunti_reti.txt
+Lezione 1 - Modello OSI
+
+Il modello OSI (Open Systems Interconnection) è composto da 7 livelli:
+
+1. Fisico - trasmissione dei bit sul mezzo fisico
+2. Data Link - gestione dei frame e accesso al mezzo
+3. Rete - instradamento dei pacchetti (IP)
+4. Trasporto - comunicazione end-to-end (TCP, UDP)
+5. Sessione - gestione delle sessioni di comunicazione
+6. Presentazione - codifica e crittografia dei dati
+7. Applicazione - interfaccia con l'utente (HTTP, FTP, SMTP)
+
+Il modello TCP/IP semplifica questi livelli in 4:
+- Accesso alla rete (livelli 1-2)
+- Internet (livello 3)
+- Trasporto (livello 4)
+- Applicazione (livelli 5-7)
+
+Ogni livello comunica solo con il livello adiacente.
+Il principio di incapsulamento prevede che ogni livello aggiunga un header ai dati.
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ head -n 3 appunti_reti.txt
+Lezione 1 - Modello OSI
+
+Il modello OSI (Open Systems Interconnection) è composto da 7 livelli:
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ tail -n 5 appunti_reti.txt
+- Trasporto (livello 4)
+- Applicazione (livelli 5-7)
+
+Ogni livello comunica solo con il livello adiacente.
+Il principio di incapsulamento prevede che ogni livello aggiunga un header ai dati.
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/documenti
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cd /workspaces/lezione-bash02a-scattarella/esercizi/log
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ head -n  5 server.log
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+2024-01-15 08:05:16 [INFO] Richiesta GET /style.css - 200 OK
+2024-01-15 08:10:30 [WARNING] Tentativo di accesso non autorizzato da 192.168.1.100
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ tail -n 3 server.log
+2024-01-15 10:00:00 [INFO] Server in fase di arresto
+2024-01-15 10:00:01 [INFO] Connessione al database chiusa
+2024-01-15 10:00:02 [INFO] Server arrestato correttamente
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ less accessi.log
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd documenti
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cp appunti_reti.txt appunti_reti_backup.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cp todo.txt /esercizi/backup
+cp: cannot create regular file '/esercizi/backup': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cp todo.txt /backup
+cp: cannot create regular file '/backup': Permission denied
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cp todo.txt /esercizi/backup/
+cp: cannot create regular file '/esercizi/backup/': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/documenti
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cp todo.txt /workspaces/lezione-bash02a-scattarella/esercizi/backup/
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ ls
+appunti_database.txt  appunti_reti.txt  appunti_reti_backup.txt  appunti_sicurezza.txt  todo.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cp -r esercizi/progetti/ /workspaces/lezione-bash02a-scattarella/esercizi/backup/
+cp: cannot stat 'esercizi/progetti/': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cp -r /workspaces/lezione-bash02a-scattarella/esercizi/progetti/ workspaces/lezion
+e-bash02a-scattarella/esercizi/backup/
+cp: cannot create directory 'workspaces/lezione-bash02a-scattarella/esercizi/backup/': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cp -r progetti/ backup/progetti
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ ls
+archivio  backup  documenti  log  progetti  sandbox
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd documenti
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ mv todo.txt attivita.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ ls
+appunti_database.txt  appunti_reti.txt  appunti_reti_backup.txt  appunti_sicurezza.txt  attivita.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ mv attivita.txt /workspaces/lezione-bash02a-scattarella/esercizi/archivio
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ ls
+appunti_database.txt  appunti_reti.txt  appunti_reti_backup.txt  appunti_sicurezza.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/documenti (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd archivio
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls
+attivita.txt      documento_febbraio.pdf  foto_milano_2023.jpg  foto_roma_2024.jpg  readme.md
+budget_2023.xlsx  documento_gennaio.pdf   foto_napoli_2024.jpg  note.txt            relazione_finale.docx
+budget_2024.xlsx  documento_marzo.pdf     foto_roma_2023.jpg    presentazione.pptx  relazione_intermedia.docx
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd progetti/webapp
+@ze-hue ➜ .../lezione-bash02a-scattarella/esercizi/progetti/webapp (main) $ mv app.js main.js
+@ze-hue ➜ .../lezione-bash02a-scattarella/esercizi/progetti/webapp (main) $ mv style.css /workspaces/lezione-bash02a-scattarella/esercizi/backup/style_old.css/
+mv: cannot move 'style.css' to '/workspaces/lezione-bash02a-scattarella/esercizi/backup/style_old.css/': Not a directory
+@ze-hue ➜ .../lezione-bash02a-scattarella/esercizi/progetti/webapp (main) $ mv style.css /workspaces/lezione-bash02a-scattarella/esercizi/backup/style_old.css
+@ze-hue ➜ .../lezione-bash02a-scattarella/esercizi/progetti/webapp (main) $ ls
+index.html  main.js
+@ze-hue ➜ .../lezione-bash02a-scattarella/esercizi/progetti/webapp (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/progetti (main) $ cd backup
+bash: cd: backup: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/progetti (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/progetti
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/progetti (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd backup
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/backup (main) $ ls
+progetti  style_old.css  todo.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/backup (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd archivio
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ rm note.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ rm -i readme.md
+rm: remove regular empty file 'readme.md'? y 
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls
+attivita.txt      budget_2024.xlsx        documento_gennaio.pdf  foto_milano_2023.jpg  foto_roma_2023.jpg  presentazione.pptx     relazione_intermedia.docx
+budget_2023.xlsx  documento_febbraio.pdf  documento_marzo.pdf    foto_napoli_2024.jpg  foto_roma_2024.jpg  relazione_finale.docx
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ touch esercizi/temp
+touch: cannot touch 'esercizi/temp': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ mkdir esercizi/temp 
+mkdir: cannot create directory ‘esercizi/temp’: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ mkdir temp
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd temp
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/temp (main) $ touch a.txt/b.txt
+touch: cannot touch 'a.txt/b.txt': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/temp (main) $ touch a.txt/b.txt
+touch: cannot touch 'a.txt/b.txt': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/temp (main) $ touch a.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/temp (main) $ touch b.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/temp (main) $ rm temp
+rm: cannot remove 'temp': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/temp (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ rm temp
+rm: cannot remove 'temp': Is a directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ rm -r temp
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ ls
+archivio  backup  documenti  log  progetti  sandbox
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd archivio
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *jpg
+foto_milano_2023.jpg  foto_napoli_2024.jpg  foto_roma_2023.jpg  foto_roma_2024.jpg
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *.pdf
+documento_febbraio.pdf  documento_gennaio.pdf  documento_marzo.pdf
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls 2024
+ls: cannot access '2024': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *2024*
+budget_2024.xlsx  foto_napoli_2024.jpg  foto_roma_2024.jpg
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ cp *.jpg  /workspaces/lezione-bash02a-scattarella/esercizi/backup/
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls relazione*
+relazione_finale.docx  relazione_intermedia.docx
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *xlsx *docx
+budget_2023.xlsx  budget_2024.xlsx  relazione_finale.docx  relazione_intermedia.docx
+ù@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *Roma*
+ls: cannot access '*Roma*': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls foto_roma*
+foto_roma_2023.jpg  foto_roma_2024.jpg
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls budget_202[34]
+ls: cannot access 'budget_202[34]': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls budget_202[34].xlsx
+budget_2023.xlsx  budget_2024.xlsx
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls documento_???????.pdf
+documento_gennaio.pdf
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/archivio
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd sandbox
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/sandbox (main) $ echo mela > frutti.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/sandbox (main) $ echo banana >> frutti.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/sandbox (main) $ echo arancia  >> frutti.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/sandbox (main) $ cat < frutti.txt
+mela
+banana
+arancia
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/sandbox (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd archivio
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *.jpd > sandbox/elenco_foto.txt 
+bash: sandbox/elenco_foto.txt: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *.jpd > /workspaces/lezione-bash02a-scattarella/esercizi/san
+dbox/elenco_foto.txt
+ls: cannot access '*.jpd': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *.jpd > workspaces/lezione-bash02a-scattarella/esercizi/sand
+box/elenco_foto.txt
+bash: workspaces/lezione-bash02a-scattarella/esercizi/sandbox/elenco_foto.txt: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *.jpd > /workspaces/lezione-bash02a-scattarella/esercizi/san
+dbox/elenco_foto.txt
+ls: cannot access '*.jpd': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *.jpg > ../sandbox/elenco_foto.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ ls *.pdf >> ../sandbox/elenco_foto.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ cat ../sandbox/elenco_foto.txt
+foto_milano_2023.jpg
+foto_napoli_2024.jpg
+foto_roma_2023.jpg
+foto_roma_2024.jpg
+documento_febbraio.pdf
+documento_gennaio.pdf
+documento_marzo.pdf
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/archivio (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cd log
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ head -n 5 server.log > ../sandbox/log_estratto.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ tail -n 3 server.log >> ../sandbox/log_estratto.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat ../sandbox/log_estratto.txt
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+2024-01-15 08:05:16 [INFO] Richiesta GET /style.css - 200 OK
+2024-01-15 08:10:30 [WARNING] Tentativo di accesso non autorizzato da 192.168.1.100
+2024-01-15 10:00:00 [INFO] Server in fase di arresto
+2024-01-15 10:00:01 [INFO] Connessione al database chiusa
+2024-01-15 10:00:02 [INFO] Server arrestato correttamente
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/log
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat server.log | grep "ERROR" 
+2024-01-15 08:20:45 [ERROR] Connessione al database persa
+2024-01-15 08:20:46 [ERROR] Timeout nella riconnessione al database
+2024-01-15 08:45:10 [ERROR] File non trovato: /images/logo.png - 404
+2024-01-15 09:45:00 [ERROR] Impossibile inviare email di notifica
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat .. | grep "WARNING" | wc -l
+cat: ..: Is a directory
+0
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat server.log | grep "WARNING" | wc -l
+4
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat server.log | grep "INFO" > ../sandbox/solo_info.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat ../sandbox/solo_info.txt
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+2024-01-15 08:05:16 [INFO] Richiesta GET /style.css - 200 OK
+2024-01-15 08:15:00 [INFO] Richiesta POST /api/login - 200 OK
+2024-01-15 08:20:50 [INFO] Riconnessione al database riuscita
+2024-01-15 08:30:00 [INFO] Richiesta GET /api/studenti - 200 OK
+2024-01-15 08:40:00 [INFO] Richiesta PUT /api/studenti/15 - 200 OK
+2024-01-15 08:50:00 [INFO] Backup automatico completato
+2024-01-15 09:00:00 [INFO] Richiesta GET /api/classi - 200 OK
+2024-01-15 09:30:00 [INFO] Pulizia cache completata
+2024-01-15 10:00:00 [INFO] Server in fase di arresto
+2024-01-15 10:00:01 [INFO] Connessione al database chiusa
+2024-01-15 10:00:02 [INFO] Server arrestato correttamente
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/log
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat accssi.log | grep "fallito"
+cat: accssi.log: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat accessi.log | grep "fallito"
+2024-01-15 08:10:30 admin login fallito 192.168.1.100
+2024-01-15 08:10:31 admin login fallito 192.168.1.100
+2024-01-15 08:35:00 guest login fallito 192.168.1.50
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat accessi.log | grep "successo" | wc -l
+5
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat accessi.log | grep "login" | awk '{print $3}' | sort | uniq
+admin
+anna.verdi
+guest
+luca.bianchi
+mario.rossi
+sara.neri
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ ls /workspaces/*Lezione_Bash02*/esercizi/archivio/*.jpg | wc -l
+ls: cannot access '/workspaces/*Lezione_Bash02*/esercizi/archivio/*.jpg': No such file or directory
+0
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/log
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ ls /workspaces/lezione-bash02a-scattarella/esercizi/archivio*jpg | wc -l
+ls: cannot access '/workspaces/lezione-bash02a-scattarella/esercizi/archivio*jpg': No such file or directory
+0
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cat /workspaces/lezione-bash02a-scattarella/esercizi/documenti/appunti_reti.txt | grep "livello"
+- Internet (livello 3)
+- Trasporto (livello 4)
+Ogni livello comunica solo con il livello adiacente.
+Il principio di incapsulamento prevede che ogni livello aggiunga un header ai dati.
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ grep "database" /workspaces/lezione-bash02a-scattarella/esercizi/log/server.log | wc -l
+5
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi/log
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi/log (main) $ cd ..
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cp documenti/*.txt backup/
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ ls backup
+appunti_database.txt  appunti_reti_backup.txt  foto_milano_2023.jpg  foto_roma_2023.jpg  progetti       todo.txt
+appunti_reti.txt      appunti_sicurezza.txt    foto_napoli_2024.jpg  foto_roma_2024.jpg  style_old.css
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ grep "192.168.1.100" /workspaces/lezione-bash02a-scattarella/esercizi/log/accessi.log | wc -l
+4
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ echo "=== REPORT ===" > sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ ls archivio/ > sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ echo " " > sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ head  -n 3 server.log > sandbox/report.txt
+head: cannot open 'server.log' for reading: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ head  -n 3 log/server.log > sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cat report.txt
+cat: report.txt: No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cat sandbox/report.txt
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cat sandbox/report.txt
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ rm report.txt
+rm: cannot remove 'report.txt': No such file or directory
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ del report.txt
+bash: del: command not found
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ rm /workspaces/lezione-bash02a-scattarella/esercizi/sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ ^C
+^[[200~echo "=== REPORT ===" > sandbox/report.txt^[[201~@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ echo "=== REPORT ===" > sandbox/re
+
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ echo "=== REPORT ===" > sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ ls archivio/ >> sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ echo "" >> sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ head -n 3 log/server.log >> sandbox/report.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cat sandbox/report.txt
+=== REPORT ===
+attivita.txt
+budget_2023.xlsx
+budget_2024.xlsx
+documento_febbraio.pdf
+documento_gennaio.pdf
+documento_marzo.pdf
+foto_milano_2023.jpg
+foto_napoli_2024.jpg
+foto_roma_2023.jpg
+foto_roma_2024.jpg
+presentazione.pptx
+relazione_finale.docx
+relazione_intermedia.docx
+
+2024-01-15 08:00:01 [INFO] Server avviato sulla porta 8080
+2024-01-15 08:00:02 [INFO] Connessione al database stabilita
+2024-01-15 08:05:15 [INFO] Richiesta GET /index.html - 200 OK
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ pwd
+/workspaces/lezione-bash02a-scattarella/esercizi
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ grep "fallito" log/accessi.log > sandbox/tentativi_falliti.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ echo "---" >> sandbox/tentativi_falliti.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ echo -n "Totale tentativi falliti: " >> sandbox/tentativi_falliti.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ grep "fallito" log/accessi.log | wc -l >> sandbox/tentativi_falliti.txt
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ cat sandbox/tentativi_falliti.txt
+2024-01-15 08:10:30 admin login fallito 192.168.1.100
+2024-01-15 08:10:31 admin login fallito 192.168.1.100
+2024-01-15 08:35:00 guest login fallito 192.168.1.50
+---
+Totale tentativi falliti: 3
+@ze-hue ➜ /workspaces/lezione-bash02a-scattarella/esercizi (main) $ 

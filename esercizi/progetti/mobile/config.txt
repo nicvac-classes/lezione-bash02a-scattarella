@@ -1,0 +1,8 @@
+# Configurazione app mobile
+app.name=La mia app
+app.version=1.0
+app.debug=true
+app.language=it
+database.host=localhost
+database.port=3306
+database.name=myapp_db

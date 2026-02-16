@@ -1,0 +1,15 @@
+Lista attività - Progetto finale
+
+[x] Definire i requisiti del progetto
+[x] Creare il diagramma ER del database
+[ ] Implementare il backend in Java
+[ ] Creare le API REST
+[ ] Sviluppare il frontend HTML/CSS
+[ ] Test funzionali
+[ ] Documentazione tecnica
+[ ] Presentazione finale
+
+Scadenze:
+- Backend: 15 marzo
+- Frontend: 30 marzo
+- Consegna finale: 15 aprile

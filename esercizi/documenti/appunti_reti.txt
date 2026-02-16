@@ -1,0 +1,20 @@
+Lezione 1 - Modello OSI
+
+Il modello OSI (Open Systems Interconnection) è composto da 7 livelli:
+
+1. Fisico - trasmissione dei bit sul mezzo fisico
+2. Data Link - gestione dei frame e accesso al mezzo
+3. Rete - instradamento dei pacchetti (IP)
+4. Trasporto - comunicazione end-to-end (TCP, UDP)
+5. Sessione - gestione delle sessioni di comunicazione
+6. Presentazione - codifica e crittografia dei dati
+7. Applicazione - interfaccia con l'utente (HTTP, FTP, SMTP)
+
+Il modello TCP/IP semplifica questi livelli in 4:
+- Accesso alla rete (livelli 1-2)
+- Internet (livello 3)
+- Trasporto (livello 4)
+- Applicazione (livelli 5-7)
+
+Ogni livello comunica solo con il livello adiacente.
+Il principio di incapsulamento prevede che ogni livello aggiunga un header ai dati.

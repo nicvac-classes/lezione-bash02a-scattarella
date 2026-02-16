@@ -1,0 +1,4 @@
+# File di configurazione nascosto
+password_db=supersegreta123
+api_key=abc123def456
+secret_token=xyz789

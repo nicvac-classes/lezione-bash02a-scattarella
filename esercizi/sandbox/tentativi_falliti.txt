@@ -1,0 +1,5 @@
+2024-01-15 08:10:30 admin login fallito 192.168.1.100
+2024-01-15 08:10:31 admin login fallito 192.168.1.100
+2024-01-15 08:35:00 guest login fallito 192.168.1.50
+---
+Totale tentativi falliti: 3
